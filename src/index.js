@@ -17,6 +17,14 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Weather" })
 })
 
+app.get("/help", (req, res) => {
+  res.render("help", { title: "Help" })
+})
+
+app.get("/about", (req, res) => {
+  res.render("about", { title: "About" })
+})
+
 app.listen(port, () => {
   console.log(`Server has been started on port ${port}`)
 })

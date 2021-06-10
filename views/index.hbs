@@ -1,5 +1,15 @@
 {{> header}}
 
-<p>This page will display the weather info</p>
+<div class="content">
+  <p>Enter a location to search</p>
+  <form>
+    <input type="text" name="address" placeholder="Location...">
+    <button type="submit">Search</button>
+  </form>
+  <p id="msg-1"></p>
+  <p id="msg-2"></p>
+</div>
 
 {{> footer}}
+
+<script src="/js/script.js"></script>

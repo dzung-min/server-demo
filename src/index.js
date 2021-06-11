@@ -6,7 +6,7 @@ const getGeoCode = require("./utils/getGeoCode")
 const getWeatherInfo = require("./utils/getWeatherInfo")
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 // config static folder
 const publicPath = path.join(__dirname, "../public")
